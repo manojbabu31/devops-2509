@@ -14,7 +14,7 @@ RUN apt-get install apache2 -y
 COPY info.html /var/www/html/
 
 # Expose server to external network
-EXPOSE 80
+EXPOSE 80 8080
 
 # Execute Apache2 service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] 
