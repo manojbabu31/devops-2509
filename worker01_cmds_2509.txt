@@ -1,0 +1,8 @@
+apt-get update             
+apt-get install default-jdk
+users                      
+passwd                     
+vi /etc/ssh/sshd_config    
+service sshd restart       
+history                    
+history > worker01_cmds.txt

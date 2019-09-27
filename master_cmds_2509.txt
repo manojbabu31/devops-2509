@@ -1,0 +1,141 @@
+    1  ip addr
+    2  ping google.com
+    3  apt-get update ; apt-get isntall git -y
+    4  apt-get update ; apt-get install git -y
+    5  clear
+    6  git --version
+    7  clear
+    8  git clone https://github.com/manojbabu31/devops-2509.git
+    9  clear
+   10  git clone https://github.com/manojbabu31/devops-2509.git
+   11  git config --list
+   12  ls
+   13  cd devops-2509/
+   14  git config --list
+   15  clear
+   16  echo "Welcome to Git Demo" > hello_world.txt
+   17  git status
+   18  git add .
+   19  git status
+   20  git commit -m "hello_world"
+   21  git status
+   22  git push origin master
+   23  clear
+   24  history
+   25  git congif --list
+   26  clear
+   27  git config --list
+   28  clear
+   29  echo "Manoj" | git hash-object --stdin
+   30  echo "Manoj" | git hash-object --stdin -w
+   31  git cat-file 14057a642b96108cc7b423b9b2aa63c1d61484c7 -p
+   32  tree .
+   33  apt-get install tree -y
+   34  ls
+   35  cd .git
+   36  ls
+   37  cd objects/
+   38  tree .
+   39  cd ..
+   40  cd branches/
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd logs/
+   45  ls
+   46  cd refs/
+   47  ls
+   48  cd remotes/
+   49  ls
+   50  cd origin/
+   51  ls
+   52  vi master
+   53  cd ..
+   54  clear
+   55  ls
+   56  cd objects/
+   57  tree .
+   58  git log
+   59  git cat-file 0ee03835e00a021a8284b769d1553e2fd2c1cc75 -p
+   60  git log
+   61  git
+   62  cd ..
+   63  clear
+   64  mkdir test/test1/test.txt
+   65  mkdir test/test1
+   66  clear
+   67  ls
+   68  mkdir test
+   69  mkdir test/test1
+   70  echo "File to be deleted" > abc.txt
+   71  ls
+   72  mv abc.txt test/test1/
+   73  ls
+   74  git status
+   75  git add .
+   76  git status
+   77  git commit -m "File to be deleted"
+   78  git push
+   79  git log
+   80  ls
+   81  git rm test
+   82  git rm -r test
+   83  ls
+   84  git status
+   85  git commit -m "Delete test dir"
+   86  git push
+   87  git branch
+   88  git branch dev
+   89  git branch qa
+   90  git branch prod
+   91  git branch
+   92  git checkout qa
+   93  ls
+   94  echo "QA" > QA.txt
+   95  ls
+   96  git branch
+   97  ls
+   98  git checkout master
+   99  ls
+  100  git branch
+  101  ls
+  102  git checkout dev
+  103  ls
+  104  clear
+  105  git branch
+  106  git checkout qa
+  107  git add .
+  108  git commit -m "QA"
+  109  ls
+  110  git checkout dev
+  111  ls
+  112  git checkout master
+  113  ls
+  114  git merge qa
+  115  ls
+  116  git checkout QA
+  117  git checkout qa
+  118  ls
+  119  git checkout dev
+  120  ls
+  121  git branch
+  122  git push origin qa
+  123  ls
+  124  git checkout qa
+  125  ls
+  126  git checkout master
+  127  ls
+  128  git branch
+  129  git merge qa
+  130  clear
+  131  cd
+  132  clear
+  133  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+  134  ls
+  135  java -version
+  136  clear
+  137  apt-get install default-jdk
+  138  java --version
+  139  java -version
+  140  java -jar jenkins.war --httpPort=9090
+  141  history > master_cmds.txt
