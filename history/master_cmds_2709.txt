@@ -1,0 +1,634 @@
+    1  clear
+    2  ls
+    3  cd .jenkins/
+    4  ls
+    5  cd users/
+    6  ls
+    7  cd root_3535394910374898027/
+    8  ls
+    9  vi config.xml 
+   10  clear
+   11  cd ..
+   12  ls
+   13  cd admin_916672483128011980/
+   14  vi config.xml 
+   15  history
+   16  exit
+   17  clear
+   18  ssh root@172.31.0.11
+   19  clear
+   20  ls
+   21  cd .jenkins/
+   22  ls
+   23  cd user
+   24  cd users/
+   25  ls
+   26  cd admin_916672483128011980/
+   27  ls
+   28  cat config.xml 
+   29  cat config.xml | grep password
+   30  python
+   31  python3
+   32  pip install hudson.util.Secret
+   33  apt install python-pip
+   34  clear
+   35  pip install hudson
+   36  pip install hudson.util.Secret
+   37  pip install Secret
+   38  clear
+   39  cd
+   40  clear
+   41  ls
+   42  history
+   43  exit
+   44  apt-get install \     apt-transport-https \     ca-certificates \     curl \     gnupg-agent \     software-properties-common
+   45  apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+   46  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   47  apt-key fingerprint 0EBFCD88
+   48  add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   49     $(lsb_release -cs) \
+   50     stable"
+   51  apt-get update
+   52  apt-get install docker-ce docker-ce-cli containerd.io
+   53  docker version
+   54  docker run busybox echo "Entrying Docker World"
+   55  docker images
+   56  docker ps -a
+   57  ls
+   58  clear
+   59  docker search ubuntu
+   60  docker pull ubuntu
+   61  docker images
+   62  docker run ubuntu echo "Hello"
+   63  docker run -i ubuntu
+   64  docker run -it ubuntu
+   65  docker run -it busybox
+   66  clear
+   67  ls
+   68  clear
+   69  docker run -it ubuntu
+   70  clear
+   71  ls
+   72  docker ps
+   73  docker ps -a
+   74  docker kill
+   75  docker kill -- help
+   76  docker kill --help
+   77  docker kill *
+   78  docker container
+   79  docker container ls
+   80  clear
+   81  docker ps
+   82  docker run -it ubuntu
+   83  docker ps
+   84  docker attach 5242679e633a
+   85  ls
+   86  docker attach 5242679e633a
+   87  clear
+   88  docker attach 5242679e633a
+   89  docker ps
+   90  docker state 5242679e633a
+   91  docker start 5242679e633a
+   92  docker ps
+   93  docker attach 5242679e633a
+   94  clear
+   95  docker ps
+   96  docker ps -a
+   97  docker ps -aq
+   98  docker rm $(docker ps -aq)
+   99  docker ps -a
+  100  docker ps
+  101  docker image
+  102  docker images
+  103  clear
+  104  docker search airflow
+  105  docker pull apache/airflow
+  106  clear
+  107  docker exec
+  108  docker exec --help
+  109  docker ps
+  110  docker ps -a
+  111  clear
+  112  docker run ubuntu
+  113  docker ps 
+  114  docker ps -a
+  115  docker run -dt busybox
+  116  docker ps
+  117  docker attach aeed2b6a64b0
+  118  clear
+  119  docker ps
+  120  docker ps -a
+  121  docker kill modest_gould
+  122  docker ps
+  123  docker kill objective_yalow
+  124  docker ps
+  125  docker ps -a
+  126  docker ps
+  127  docker run -it ubuntu
+  128  clear
+  129  docker ps
+  130  docker stop 8a52a38a8645
+  131  docker ps 
+  132  docker ps -a
+  133  docker ps
+  134  docker ps -a
+  135  docker rm (docker ps -aq)
+  136  docker rm $(docker ps -aq)
+  137  docker ps -a
+  138  docker ps -aq
+  139  clear
+  140  ls
+  141  clear
+  142  docker run -itd ubuntu
+  143  docker ps
+  144  docker stop 3db0fc715ce9
+  145  docker ps
+  146  docker ps -a
+  147  docker kill 0c3e38574910
+  148  docker ps -a
+  149  docker kill $(docker ps -q)
+  150  docker ps -a
+  151  clear
+  152  docker images
+  153  docker rmi busybox:latest
+  154  docker images
+  155  apt-get update; apt-get install apache2
+  156  apache2ctl start
+  157  clear
+  158  docker inspect
+  159  clear
+  160  docker
+  161  docker ps
+  162  docker ps -a
+  163  docker rm $(docker ps -aq)
+  164  clear
+  165  docker ps -q
+  166  docker ps -aq
+  167  clear
+  168  docker run -it ubuntu
+  169  docker ps
+  170  docker inspect 45e621e60cbd
+  171  curl 172.17.0.1
+  172  docker ps
+  173  docker attach 45e621e60cbd
+  174  curl 172.17.0.1/info.html
+  175  curl 172.17.0.1\info.html
+  176  clear
+  177  docker ps
+  178  docker attach 45e621e60cbd
+  179  curl 172.17.0.1
+  180  curl 172.17.0.1/info.html
+  181  curl 172.17.0.1:80/info.html
+  182  curl 172.17.0.1/info.html
+  183  docker attach 45e621e60cbd
+  184  curl 172.17.0.2/info.html
+  185  docker ps
+  186  docker attach 45e621e60cbd
+  187  docker images
+  188  docker commit -p -m "My First Apache Image" 45e621e60cbd myapache-image:v1
+  189  docker images
+  190  docker inspect myapache-image
+  191  docker inspect myapache-image:v1
+  192  clear
+  193  docker run -it myapache-image:v1
+  194  curl 172.17.0.3/info.html
+  195  curl 172.17.0.3
+  196  curl 172.17.0.3/info.html
+  197  docker container
+  198  docker containers
+  199  docker ps
+  200  docker container ls
+  201  docker ps -a
+  202  clear
+  203  curl 172.17.0.3/info.html
+  204  curl 172.17.0.2/info.html
+  205  history
+  206  clear
+  207  ls
+  208  cd devops-2509/
+  209  ls
+  210  mkdir docker
+  211  cd docker/
+  212  mkdir apache
+  213  cd apache/
+  214  vi Dockerfile
+  215  docker images
+  216  docker build -t myapache-file:v1 .
+  217  docker images
+  218  docker run -d myapache-file:v1
+  219  docker ps
+  220  docker inspect ea8
+  221  curl 172.17.0.4
+  222  ls
+  223  vi Dockerfile 
+  224  docker build -t myapache-file:v2 .
+  225  docker images
+  226  docker run -d myapache-file:v2
+  227  docker ps
+  228  docker inspect 50
+  229  curl 172.17.0.5
+  230  curl 172.17.0.5/info.html
+  231  vi Dockerfile
+  232  exit
+  233  clear
+  234  vi Dockerfile
+  235  ls
+  236  cd devops-2509/docker/apache/
+  237  ls
+  238  vi Dockerfile
+  239  docker build -t myapache-file:v3 .
+  240  docker run -d myapache-file:v3
+  241  docker ps
+  242  vi Dockerfile
+  243  docker build -t myapache-file:v3 .
+  244  docker run -d myapache-file:v3
+  245  vi Dockerfile
+  246  docker build -t myapache-file:v3 .
+  247  docker run -d myapache-file:v3
+  248  docker ps
+  249  docker attach e1e8a7a0550f
+  250  clear
+  251  ls
+  252  vi Dockerfile
+  253  docker build -t myapache-file:v3 .
+  254  docker run -d myapache-file:v3
+  255  ipaddr 
+  256  ip addr 
+  257  exit
+  258  ls
+  259  cd devops-2509/
+  260  ls
+  261  history
+  262  ls
+  263  cd ..
+  264  ls
+  265  cd devops-2509/
+  266  git status
+  267  git pull
+  268  clear
+  269  ls
+  270  git status
+  271  git add .
+  272  git commit -m "Dockerfile"
+  273  git push
+  274  cd ..
+  275  cd devops-sg-25092019/
+  276  s
+  277  ls
+  278  cp Day2_History.txt ../devops-2509/
+  279  cd ..
+  280  cd devops-2509/
+  281  ls
+  282  git status
+  283  git commit -am "History File"
+  284  git commit -a -m "History File"
+  285  git commit -a "History File"
+  286  git commit -a
+  287  clear
+  288  git add .
+  289  git commit -m "History File"
+  290  git push
+  291  clear
+  292  ls
+  293  cd history
+  294  mkdir history
+  295  cd
+  296  clear
+  297  apt-get update; apt-get install ansible -y
+  298  cd devops-2509/
+  299  ls
+  300  mv Day2_History.txt master_cmds_2509.txt worker01_cmds_2509.txt
+  301  mv Day2_History.txt master_cmds_2509.txt worker01_cmds_2509.txt /root/devops-2509/history/
+  302  ls
+  303  cat hello_world.txt
+  304  ls
+  305  git status
+  306  git add .
+  307  git status
+  308  git commit -m "history files moved"
+  309  git push
+  310  mkdir ansible
+  311  cd ansible/
+  312  mkdir demo01
+  313  cd demo01/
+  314  ls
+  315  clear
+  316  ssh worker01
+  317  ansible-doc -l
+  318  apt
+  319  service
+  320  ansible-doc service
+  321  ansible -i inventory
+  322  ping worker01
+  323  ping -c4 172.31.0.11
+  324  ping -c4 172.31.0.12
+  325  apt-get install sshpass -y
+  326  vi inventory
+  327  ansible -i inventory -m ping -u vagrant -k
+  328  ansible all -i inventory -m ping -u vagrant -k
+  329  ansible all -i inventory -m ping -u root -k
+  330  ssh 172.31.0.12
+  331  ansible all -i inventory -m ping -u root -k
+  332  vi inventory 
+  333  ansible all -i inventory -m ping -u root -k
+  334  ansible all -i inventory -m shell -a 'cat /etc/*-release' -u root -k
+  335  ssh 172.31.0.10
+  336  cat /etc/hosts
+  337  cd /etc/ssh/
+  338  ls -ltr
+  339  cd
+  340  cd devops-2509/ansible/demo01/
+  341  ls
+  342  ansible all -i inventory -m command -a 'uptime' -u root -k
+  343  ansible all -i inventory -m command -a 'df -h' -u root -k
+  344  cd ..
+  345  mkdir demo2
+  346  rm -rf demo2
+  347  ls
+  348  cp -rf demo02
+  349  cp -r demo02
+  350  cp -rf ./demo02
+  351  clear
+  352  cd demo01/
+  353  ls
+  354  vi inventory
+  355  ansible ansible -i inventory -m command -a 'uptime' -u root -k
+  356  cd ..
+  357  mkdir demo02
+  358  cp -rf demo01 ./demo02
+  359  ls
+  360  cd demo0
+  361  cd demo02
+  362  ls
+  363  cd demo01/
+  364  ls
+  365  mv inventory ../
+  366  ls
+  367  cd ..
+  368  ls
+  369  rm demo01
+  370  rm -rf demo01
+  371  ls
+  372  cd ..
+  373  cd demo01
+  374  ls
+  375  vi inventory
+  376  cd ..
+  377  cd demo02
+  378  ls
+  379  vi inventory
+  380  ansible 'db:&web' -i inventory -m command -a 'uptime' -u root -k
+  381  ansible 'db:!web' -i inventory -m command -a 'uptime' -u root -k
+  382* ansible 'uat:!web' -i inventory -m command -a 'upti
+  383  ansible 'uat:&web' -i inventory -m command -a 'uptime' -u root -k
+  384  ansible 'uat:&web:!db:|ansible' -i inventory -m command -a 'uptime' -u root -k
+  385  vi inventory 
+  386  ansible 'uat:&web:!db:|ansible:|python4' -i inventory -m command -a 'uptime' -u root -k
+  387  cd
+  388  cd devops-sg-25092019/
+  389  git pull
+  390  cd
+  391  cd devops-sg-25092019/
+  392  ls
+  393  cd
+  394  cd devops-2509/
+  395  ls
+  396  cd ..
+  397  cd devops-sg-25092019/
+  398  s
+  399  ls
+  400  cd jenkins/
+  401  ls
+  402  cat stage-pipeline
+  403  cd ..
+  404  ls
+  405  cd ani
+  406  cd ansible/
+  407  ls
+  408  cd demo02/
+  409  ls
+  410  vi inventory
+  411  cd ..
+  412  cd
+  413  cd devops-2509/
+  414  ls
+  415  cd ansible/
+  416  ls
+  417  cd demo02/
+  418  ls
+  419  vi inventory 
+  420  cd
+  421  cd devops-sg-25092019/ansible/demo02/
+  422  vi inventory 
+  423  cd
+  424  cd devops-2509/ansible/demo02/
+  425  vi inventory 
+  426  ansible DC -i inventory -m command -a 'uptime'
+  427  ansible 'DC' -i inventory -m command -a 'uptime'
+  428  ansible 'db:&web' -i inventory -m command -a 'uptime'
+  429  ansible DC -i inventory -m command -a 'uptime'
+  430  vi inventory 
+  431  ansible DC -i inventory -m command -a 'uptime'
+  432  ansible 'DC:&web' -i inventory -m command -a 'uptime'
+  433  ansible 'DC:&db' -i inventory -m command -a 'uptime'
+  434  vi inventory
+  435  ansible DC -i inventory -m command -a 'uptime'
+  436  vi inventory
+  437  ansible DC -i inventory -m command -a 'uptime'
+  438  vi inventory
+  439  ansible DC -i inventory -m command -a 'uptime'
+  440  ansible 'DC' -i inventory -m command -a 'uptime'
+  441  vi inventory
+  442  ansible DC -i inventory -m command -a 'uptime'
+  443  ls
+  444  cd ..
+  445  cp demo02
+  446  cp demo02 .demo03
+  447  cp -rf demo02 .demo03
+  448  ls
+  449  cd demo02
+  450  ls
+  451  cd ..
+  452  mv .demo03/ demo03
+  453  clear
+  454  ls
+  455  cd demo03/
+  456  ls
+  457  vi webserver.yaml
+  458  ansible-playbook -i inventory webserver.yaml
+  459  vi inventory
+  460  ansible-playbook -i inventory webserver.yaml
+  461  vi inventory
+  462  ansible-playbook -i inventory webserver.yaml
+  463  vi webserver.yaml
+  464  ansible-playbook -i inventory webserver.yaml
+  465  vi inventory
+  466  ansible-playbook -i inventory webserver.yaml
+  467  vi inventory
+  468  ansible-playbook -i inventory webserver.yaml
+  469  vi inventory
+  470  ansible-playbook -i inventory webserver.yaml
+  471  vi webserver.yaml
+  472  ansible-playbook -i inventory webserver.yaml
+  473  vi inventory
+  474  ansible-playbook -i inventory webserver.yaml
+  475  vi inventory
+  476  ansible-playbook -i inventory webserver.yaml
+  477  cat inventory 
+  478  vi inventory
+  479  ansible-playbook -i inventory webserver.yaml
+  480  ansible-playbook -i inventory -u root -k webserver.yaml
+  481  mkdir templates
+  482  cd templates
+  483  ls
+  484  vi abc.txt
+  485  cd ..
+  486  vi webserver.yaml
+  487  ansible-playbook -i inventory -u root -k webserver.yaml
+  488  ls
+  489  cd templates/
+  490  ls
+  491  vi info.j2
+  492  cd
+  493  cd devops-sg-25092019/
+  494  git pull
+  495  cd ansible/demo03/templates/
+  496  ls
+  497  cd ..
+  498  cat webserver.yaml
+  499  cd
+  500  cd devops-2509/ansible/demo03/
+  501  vi webserver.yaml
+  502  ansible-playbook -i inventory -u root -k webserver.yaml
+  503  ls
+  504  cd templates/
+  505  ls
+  506  vi info.j2
+  507  cd
+  508  cd devops-sg-25092019/ansible/demo03/templates/
+  509  vi info.j2
+  510  cd
+  511  cd devops-2509/
+  512  cd ansible/
+  513  cd demo03/templates/
+  514  vi info.j2 
+  515  cd ..
+  516  ansible-playbook -i inventory -u root -k webserver.yaml
+  517  vi webserver.yaml 
+  518  ansible-playbook -i inventory -u root -k webserver.yaml
+  519  cd
+  520  cd devops-sg-25092019/
+  521  git pull
+  522  cd
+  523  cd devops-2509/
+  524  ls
+  525  cd docker/
+  526  ls
+  527  cd apache/
+  528  ls
+  529  cd ..
+  530  mkdir atmosphere
+  531  cd atmosphere/
+  532  ls
+  533  vi Dockerfile
+  534  ls
+  535  cd ..
+  536  cd .
+  537  cd ..
+  538  ls
+  539  cd docker/
+  540  ls
+  541  cd ..
+  542  ls
+  543  cd docker/
+  544  ls
+  545  cd atmosphere/
+  546  ls
+  547  cd
+  548  clear
+  549  cd devops-sg-25092019/
+  550  git pull
+  551  ls
+  552  git pull
+  553  ls
+  554  cd ansible/
+  555  ls
+  556  cd demo03/
+  557  ls
+  558  vi inventory
+  559  cd
+  560  cd devops-sg-25092019/
+  561  cd ansible/demo03/
+  562  vi inventory 
+  563  cd ../..
+  564  ls
+  565  cd jenkins/
+  566  ls
+  567  pwd
+  568  apt-get install docker-compose -y
+  569  ls
+  570  cd ..
+  571  ls
+  572  cd atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/
+  573  ls
+  574  cd scm-test/
+  575  ls
+  576  cd ,,
+  577  cd ..
+  578  ls
+  579  cd
+  580  apt-get updates
+  581  apt-get update
+  582  apt-get install docker -y
+  583  apt-get install ordered_dict
+  584  pip
+  585  pip install ordered_dict
+  586  pip2 install ordered_dict
+  587  pip install requests
+  588  pip install OrderedDict
+  589  docker ps
+  590  docker ps -a
+  591  docker rm $(docker ps -aq)
+  592  clear
+  593  ls
+  594  cd devops-sg-25092019/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere
+  595  ls
+  596  pip install ordered_dict
+  597  pip install ordered*
+  598  pip install ordered
+  599  pip install --upgrade pip
+  600  pip2.7
+  601  pip2.7 install ordered_dict
+  602  pip2.7 install OrderedDict
+  603  cd /usr/lib/python2.7/dist-packages/requests/
+  604  ls
+  605  vi compat.py
+  606  ls
+  607  cd packages/
+  608  ls
+  609  cd ..
+  610  vi compat.py
+  611  ls
+  612  cd packages/
+  613  ls
+  614  vi __init__.py
+  615  cd ..
+  616  ls
+  617  cd urllib3
+  618  ls
+  619  cd packages/
+  620  ls
+  621  vi ordered_dict.py
+  622  cd ..
+  623  cd requests
+  624  ls
+  625  vi compat.py
+  626  ls
+  627  vi compat.py
+  628  cd
+  629  cd devops-2509/
+  630  ls
+  631  cd history/
+  632  ls
+  633  history
+  634  history > master_cmds_2709.txt
